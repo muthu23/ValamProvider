@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_14sdp"
+    android:elevation="@dimen/_5sdp"
+    card_view:cardCornerRadius="4dp">
+
+    <LinearLayout
+        android:id="@+id/root_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/_8sdp">
+
+            <com.delivery.provider.Utilities.MyBoldTextView
+                android:id="@+id/order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:text="@string/order"
+                android:textColor="@color/blue_dark"
+                android:textSize="@dimen/_14sdp" />
+
+            <ImageView
+                android:id="@+id/navigation"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="end"
+                android:contentDescription="@null"
+                android:src="@drawable/navigation" />
+
+            <ImageView
+                android:id="@+id/imgGotoPhoto"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_gravity="end"
+                android:layout_marginEnd="8dp"
+                android:layout_toStartOf="@+id/navigation"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_attach"
+                android:tint="@color/black"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/_8sdp"
+            android:paddingEnd="@dimen/_8sdp"
+            android:paddingBottom="@dimen/_8sdp">
+
+            <com.delivery.provider.Utilities.MyBoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/delivery_address"
+                android:textColor="@color/black_text_color" />
+
+            <com.delivery.provider.Utilities.MyTextView
+                android:id="@+id/delivery_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sample" />
+
+            <com.delivery.provider.Utilities.MyBoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/comments"
+                android:textColor="@color/black_text_color" />
+
+            <com.delivery.provider.Utilities.MyTextView
+                android:id="@+id/comments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sample_name" />
+        </LinearLayout>
+
+        <com.delivery.provider.Utilities.MyButton
+            android:id="@+id/status_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@color/blue_dark"
+            android:text="@string/tap_start"
+            android:textColor="@color/text_color_white" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

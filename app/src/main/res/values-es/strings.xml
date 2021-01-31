@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE resources [<!ENTITY appName "Loadrix Move"><!ENTITY appNamealone "Loadrix Move"><!ENTITY appNameCaps "JCL Charioteers"><!ENTITY ride "delivery"><!ENTITY rides "deliveries"><!ENTITY ridescap "DELIVERIES"><!ENTITY service "Service">]>
+<resources>
+
+    <string name="app_name">&appName;</string>
+    <!-- Facebook ID -->
+    <string name="facebook_app_id" translatable="false">2983621505060632</string>
+    <string name="google_login_key" translatable="false">283606797689-cma7ec9ub6icifg1774dttb52jbjae3a.apps.googleusercontent.com</string>
+
+
+    <!--navigation_drawer-->
+    <string name="navigation_drawer_open">Abrir recuadro de navegación</string>
+    <string name="navigation_drawer_close">Cerrar recuadro de navegación</string>
+    <string name="waitingForApproval">Esperando a que su cuenta sea verificada por el administrador.</string>
+    <string name="close">Cerrar</string>
+
+    <!--Activity Begin-->
+    <string name="or_connect_with_social_media">O conéctese mediante redes sociales</string>
+
+    <!--Activity Email -->
+    <string name="whats_your_mail_address">Cuál es su dirección de correo electrónico?</string>
+    <string name="whats_your_phone_number">Cuál es su número de teléfono?</string>
+    <string name="sample_mail_id">name@example.com</string>
+
+    <!--Activity Password -->
+    <string name="welcome_back">Bienvenido de nuevo, inicie sesión para continuar </string>
+    <string name="enter_your_password">Ingrese su contraseña</string>
+    <string name="i_forgot_my_password">Olvidé mi contraseña</string>
+    <string name="i_need_to_create_an_account">Necesito crear una cuenta</string>
+
+    <!--Activity Register-->
+    <string name="email">Correo Electrónico</string>
+    <string name="name">Nombre de usuario</string>
+    <string name="phone_number">Número de teléfono</string>
+    <string name="password">Contraseña</string>
+    <string name="first_name">Primer nombre</string>
+    <string name="last_name">Apellido</string>
+    <string name="mobile_no" translatable="false">9876543210</string>
+    <string name="time_taken">Tiempo requerido</string>
+    <string name="password_txt" translatable="false">******</string>
+    <string name="sample_base_price" translatable="false">0</string>
+    <string name="sample_distance" translatable="false">1 KM</string>
+    <string name="sample_time_travel" translatable="false">1 hr</string>
+    <string name="invalid_otp">Por favor escriba su OTP</string>
+    <string name="wrong_otp">OTP Incorrecto</string>
+    <string name="phone_validation">Ingrese su número de teléfono</string>
+
+    <!-- Activity ForgetPassword -->
+    <string name="recover_password">Ingrese su correo de recuperación de datos</string>
+
+    <!-- Edit Activity-->
+    <string name="edit_profile">Editar Cuenta</string>
+    <string name="change_password">Cambiar Contraseña</string>
+    <string name="save">SALVAR</string>
+    <string name="update_success">Perfil Actualizado.</string>
+
+    <!--Show Dailog-->
+    <string name="connect_to_network">Conéctese a la red o salga</string>
+    <string name="connect_to_wifi">Conéctese al WIFI</string>
+    <string name="quit">Salir</string>
+    <string name="cancel_ride">Cancelar &ride;</string>
+    <string name="view_receipt">Ver Recibo</string>
+    <string name="cancel">Cancelar</string>
+    <string name="cencel_request">Está seguro de que desea cancelar el &ride;?</string>
+    <string name="exit_confirm">¿Está seguro que quiere cerrar la sesión?</string>
+
+    <!-- Error Messages-->
+    <string name="something_went_wrong">Algo salió mal.</string>
+    <string name="fb_cancel">Inicio de sesión en Facebook cancelado</string>
+    <string name="fb_error">Error de inicio de sesión en Facebook</string>
+    <string name="google_login">Error de inicio de sesión en Google</string>
+    <string name="something_went_wrong_net">Algo salió mal, por favor verifique la conexión a internet.</string>
+    <string name="oops_connect_your_internet">¡Uy! Conecte su internet.</string>
+    <string name="server_down">No se puede acceder al servidor.</string>
+    <string name="please_try_again">Inténtelo de nuevo.</string>
+    <string name="email_validation">Ingrese su ID de correo electrónico.</string>
+    <string name="not_valid_email">No es una ID de correo electrónico válida.</string>
+    <string name="password_validation">La contraseña no se puede dejar en blanco.</string>
+    <string name="first_name_empty">Primer nombrees necesario.</string>
+    <string name="last_name_empty">Apellido es necesario.</string>
+    <string name="mobile_number_empty">Número de móvil es necesario.</string>
+    <string name="request_reject">Solicitud rechazada</string>
+    <string name="request_accept">Solicitud aceptada con éxito</string>
+    <string name="request_cancel">Ha cancelado la solicitud</string>
+    <string name="write_your_comment">Escriba sus comentarios</string>
+
+    <!--Approval status-->
+    <string name="approved" translatable="false">Approved</string>
+    <string name="banned" translatable="false">Banned</string>
+    <string name="waiting_for_approval">A la espera de la aprobación</string>
+
+    <!--Wallet Fragment-->
+    <string name="your_wallet_amount">El monto de su billetera es</string>
+    <string name="sample_amount" translatable="false">1450</string>
+
+    <!--Offline Activity -->
+    <string name="go_online">Entrar en línea</string>
+    <string name="go_offline">FUERA DE LÍNEA</string>
+
+    <!--Invalid Username and Password-->
+    <string name="invalid_credentials">Nombre de usuario o contraseña inválidos.</string>
+
+    <!--True or False -->
+    <string name="True" translatable="false">true</string>
+    <string name="False" translatable="false">false</string>
+
+    <!--Your Trips-->
+    <string name="history">Historial</string>
+    <string name="comments">Comentarios</string>
+    <string name="no_trips">No hay entrega disponible.</string>
+    <string name="no_upcoming_trips">No hay próximas entregas disponibles.</string>
+    <string name="no_rides">Sin &rides; completos.</string>
+    <string name="upcoming">Próxima</string>
+    <string name="past">Pasada</string>
+    <string name="payment_methods_past">Método de Pago</string>
+    <string name="sample_name">Will Smith</string>
+
+    <!--Flow status -->
+    <string name="tap_when_arrived">LLEGADA</string>
+    <string name="tap_when_pickedup">RECOGIDA</string>
+    <string name="tap_when_paid">CONFIRMAR PAGO</string>
+    <string name="rate_user">ENVIAR</string>
+    <string name="rate_your_trip">Califique su entrega con</string>
+
+    <!--Change Password-->
+    <string name="change_password_title">Cambiar contraseña</string>
+    <string name="current_password">Contraseña Actual</string>
+    <string name="new_password">Nueva Contraseña</string>
+    <string name="confirm_password">Confirmar Nueva Contraseña</string>
+    <string name="please_enter_current_pass">Por favor ingrese la contraseña actual.</string>
+    <string name="please_enter_new_pass">Por favor ingrese una nueva contraseña.</string>
+    <string name="please_enter_confirm_pass">Por favor confirme la contraseña.</string>
+    <string name="different_passwords">La contraseña no coincide.</string>
+
+    <!--Side Navigation Menu -->
+    <string name="home">Inicio</string>
+    <string name="your_trips">Sus Entregas</string>
+    <string name="wallet">Billetera</string>
+    <string name="help">Contáctenos</string>
+    <string name="earnings">Ganancias</string>
+    <string name="share">Compartir</string>
+    <string name="logout">Cerrar sesión</string>
+    <string name="valid_image">No se encontró ninguna imagen.</string>
+    <string name="user_no_mobile">Usuario no tiene un número de móvil válido.</string>
+    <string name="incorrect_otp">OTP incorrecto</string>
+    <string name="otp_validation">Campo OTP es obligatorio</string>
+    <string name="confirm_password_validation">Contraseña no Coincide</string>
+    <string name="note">Nota: Ingrese el OTP enviado a su dirección de correo electrónico registrada</string>
+    <string name="secrete_code">Ingrese su OTP</string>
+    <string name="reset_password">Restablecer contraseña</string>
+    <string name="cancel_confirm">Está seguro de que desea cancelar el &ride;?</string>
+    <string name="yes">Si</string>
+    <string name="no">No</string>
+    <string name="connect_with_social_media">conectar con red social</string>
+    <string name="service">&service;</string>
+    <string name="no_services">No hay servicios asignados</string>
+    <string name="choose_acc">Elija una cuenta</string>
+    <string name="facebook_name" translatable="false">Facebook</string>
+    <string name="google_name" translatable="false">Google</string>
+    <string name="commission">Cargo por &service;</string>
+    <string name="no_comments">No hay comentarios disponibles.</string>
+    <string name="base_price">Tarifa base</string>
+    <string name="distance_price">Tarifa por distancia</string>
+    <string name="profile">Perfil</string>
+    <string name="sos_confirm">Está seguro de que quiere proceder con la llamada de emergencia?</string>
+    <string name="choose_type">Eligir tipo</string>
+    <string name="invoice">Factura - </string>
+    <string name="invoice_alone">Factura</string>
+    <string name="pick_up">Lugar de Recogida </string>
+    <string name="drop_at">Lugar de Entrega </string>
+    <string name="reason_to_cancel">Motivos de cancelación</string>
+    <string name="booking_id_colon">ID de Reserva : </string>
+    <string name="booking_id">ID de Reserva</string>
+    <string name="source_location">Lugar de Origen</string>
+    <string name="reason">Motivo</string>
+    <string name="submit">Enviar</string>
+    <string name="summary">Resumen</string>
+    <string name="total_rides">TOTAL No. DE &ridescap;</string>
+    <string name="revenue">INGRESOS</string>
+    <string name="schedule_rides">No. DE PROGRAMADOS &ridescap;</string>
+    <string name="canceled_rides">CANCELADA &ridescap;</string>
+    <string name="rides">Entregas</string>
+    <string name="upcoming_rides">Próxima &rides;</string>
+    <string name="help_msg">Nuestro equipo responderá pronto!</string>
+    <string name="no_address">No hay direccion disponible</string>
+    <string name="email_exist">El email ya ha sido registrado</string>
+    <string name="first_name_no_number">Nombre no acepta números</string>
+    <string name="last_name_no_number">Apellido no acepta números</string>
+    <string name="password_size">El tamaño de la contraseña debe ser al menos 6</string>
+    <string name="sorry_for_inconvinent">Disculpe las molestias, los asistentes están ocupados en este momento</string>
+    <string name="loading">Cargando&#8230;</string>
+    <string name="sample_earnings" translatable="false">0/0</string>
+    <string name="total_earnings">Ganancias Totales</string>
+    <string name="time">Hora</string>
+    <string name="distance">Distancia</string>
+    <string name="amount">Cantidad</string>
+    <string name="where_to">A donde?</string>
+    <string name="user">Usuario</string>
+    <string name="sample_date_time" translatable="false">30th sept 2017 at 8:30pm</string>
+    <string name="sample">No. 14 , calle 75D oeste ,la gloria , bethania</string>
+    <string name="call">LLAMADA</string>
+    <string name="distance_travelled">Distancia Recorrida</string>
+    <string name="sample_amt" translatable="false">0</string>
+    <string name="tax">Impuesto</string>
+    <string name="total">Total</string>
+    <string name="amount_to_be_paid">Monto a pagar</string>
+    <string name="rate_your_trips">Califica tu entrega</string>
+    <string name="server">El servidor no está disponible en este momento. Por favor intente más tarde.</string>
+    <string name="timer_start">1</string>
+    <string name="schedule">Calendario</string>
+    <string name="accept">Aceptar</string>
+    <string name="reject">Rechazar</string>
+    <string name="upcoming_trips">Próximas Entregas</string>
+    <string name="past_trips">Entregas Pasadas</string>
+    <string name="battery">Su batería está baja, cargue su teléfono móvil!</string>
+    <string name="update">Actualizar</string>
+    <string name="help_title">Contáctenos</string>
+    <string name="new_password_validation">La nueva contraseña no debe ser la misma que la anterior.</string>
+    <string name="password_validation1">La contraseña debe tener un mínimo de 8 caracteres, un máximo de 16 caracteres</string>
+    <string name="today_completed">Objetivo Completado Hoy</string>
+
+    <string name="sign_in">Iniciar Sesión</string>
+    <string name="signup">Registrarse</string>
+    <string name="fresh">B i e n v e n i d o</string>
+    <string name="search">C o n d u c i r</string>
+    <string name="bookmark">G a n a r</string>
+
+    <string name="fresh_description">Presentamos &appName;
+        Servicios de acarreo para los usuarios de la aplicación de &appNamealone;.</string>
+    <string name="search_description">Sea su propio jefe, fije su propio horario. Obtenga la última versión de una cuenta de conductor, todo en un mismo lugar.</string>
+    <string name="bookmark_description">Reciba un buen pago por ayudar a los usuarios a transportar lo que necesiten. Retire sus ganancias cada semana o quincenalmente.</string>
+    <string name="version">Versión</string>
+    <string name="user_busy">Su &ride;
+        fue cancelado por el usuario. Por favor contáctenos para soporte</string>
+
+    <string name="do_not_have_account">No tiene una cuenta?</string>
+    <string name="sign_up">REGÍSTRESE</string>
+    <string name="here">aquí</string>
+    <string name="note_txt">Nota</string>
+    <string name="vehicle_Details" translatable="false">Vehicle Details</string>
+    <string name="vehicle_doc_details" translatable="false">Vehicle Document Details</string>
+    <string name="view" translatable="false">View</string>
+    <string name="documents" translatable="false">Documents</string>
+    <string name="upload_your_img" translatable="false">Upload your Image</string>
+    <string name="track_oredr" translatable="false">Track Order</string>
+    <string name="source" translatable="false">Source Location</string>
+    <string name="order" translatable="false">Order</string>
+    <string name="delivery_address" translatable="false">Delivery Address</string>
+    <string name="tap_start" translatable="false">Tap To Start</string>
+    <string name="no_of_trips">No. de Entregas :</string>
+    <string name="trip">Entrega </string>
+    <string name="discount_detection">Descuento detectado</string>
+
+    <string name="enter_otp">Ingrese su contraseña OTP (de un solo uso)</string>
+    <string name="service_otp_msg">Tenga la amabilidad de entrar su OTP para iniciar el servicio</string>
+    <string name="write_something">escriba algo…</string>
+    <string name="chat">Chat</string>
+    <string name="please_give_permissions">Por favor otorgue los permisos</string>
+
+    <string name="settings">Configuraciones</string>
+    <string name="language_update">Actualizando Idioma ... Por favor espere</string>
+    <string name="language">Cambiar Idioma</string>
+    <string name="english">Inglés</string>
+    <string name="spanish">Español</string>
+
+</resources>

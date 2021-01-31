@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="@dimen/_5sdp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <com.delivery.provider.Utilities.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|start"
+            android:text="@string/note_txt"
+            android:textColor="@color/orange" />
+
+        <com.delivery.provider.Utilities.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:gravity="center"
+            android:text=":" />
+
+        <com.delivery.provider.Utilities.MyTextView
+            android:id="@+id/good_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:gravity="center_vertical|end"
+            android:text="@string/sample" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <com.delivery.provider.Utilities.MyTextView
+            android:id="@+id/src_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical|start"
+            android:text="@string/sample" />
+
+        <com.delivery.provider.Utilities.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:gravity="center"
+            android:text="-"
+            android:layout_marginRight="@dimen/_20sdp"/>
+
+        <com.delivery.provider.Utilities.MyTextView
+            android:id="@+id/dest_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical|start"
+            android:text="@string/sample" />
+
+    </LinearLayout>
+</LinearLayout>

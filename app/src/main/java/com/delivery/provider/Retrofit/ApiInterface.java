@@ -1,0 +1,28 @@
+package com.delivery.provider.Retrofit;
+
+import okhttp3.ResponseBody;
+import retrofit2.Call;
+import retrofit2.http.Field;
+import retrofit2.http.FormUrlEncoded;
+import retrofit2.http.Header;
+import retrofit2.http.POST;
+import retrofit2.http.Path;
+
+/**
+ * Created by CSS on 8/4/2017.
+ */
+
+public interface ApiInterface {
+
+    @FormUrlEncoded
+    @POST("api/provider/trip/{id}/calculate")
+    Call<ResponseBody> getLiveTracking(@Header("X-Requested-With") String xmlRequest, @Header("Authorization") String strToken,
+                                       @Path("id") String id,
+                                       @Field("latitude") String latitude, @Field("longitude") String longitude);
+    @FormUrlEncoded
+    @POST("/api/provider/chat")
+    Call<Object> postChatItem(
+            @Field("sender") String sender,
+            @Field("user_id") String user_id,
+            @Field("message") String message);
+}

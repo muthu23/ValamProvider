@@ -1,0 +1,102 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 30
+    defaultConfig {
+        applicationId "com.valam.delivery.provider"
+        useLibrary 'org.apache.http.legacy'
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.1"
+        vectorDrawables.useSupportLibrary = true
+        multiDexEnabled true
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+        compileOptions {
+            sourceCompatibility JavaVersion.VERSION_1_8
+            targetCompatibility JavaVersion.VERSION_1_8
+        }
+        lintOptions { checkReleaseBuilds false  }
+    }
+
+    signingConfigs {
+        release {
+            storePassword 'com_valam_delivery_provider'
+            keyPassword 'com_valam_delivery_provider'
+            keyAlias = 'com_valam_delivery_provider'
+            storeFile file('jks/com_valam_delivery_provider.jks')
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+    dexOptions {
+        javaMaxHeapSize "4g"
+        preDexLibraries = false
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestImplementation('androidx.test.espresso:espresso-core:3.1.0', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    //For error logcat
+    //noinspection GradleCompatible
+    implementation 'com.airbnb.android:lottie:2.2.5'
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+    implementation 'com.android.volley:volley:1.1.1'
+    implementation 'androidx.multidex:multidex:2.0.0'
+    //noinspection GradleCompatible
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.1.16'
+    implementation 'com.mikhaellopez:circularimageview:3.0.2'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.android.gms:play-services-auth:16.0.1'
+    implementation 'com.google.android.gms:play-services-location:16.0.0'
+    implementation 'com.google.android.gms:play-services-places:16.0.0'
+    implementation 'com.google.android.gms:play-services-auth:16.0.1'
+    implementation 'androidx.annotation:annotation:1.0.0'
+    implementation 'com.facebook.android:facebook-android-sdk:4.12.1'
+    implementation 'com.google.firebase:firebase-core:16.0.5'
+    implementation 'com.google.firebase:firebase-messaging:17.3.4'
+    implementation 'com.google.firebase:firebase-database:16.0.5'
+    implementation 'de.hdodenhof:circleimageview:2.1.0'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'com.intuit.sdp:sdp-android:1.0.4'
+    implementation 'com.google.maps.android:android-maps-utils:0.5'
+    implementation 'com.google.maps:google-maps-services:0.2.7'
+    implementation 'com.koushikdutta.ion:ion:2.+'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'com.daasuu:CountAnimationTextView:0.1.1'
+    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.11.0'
+    implementation 'com.github.joielechong:countrycodepicker:2.1.5'
+    implementation 'com.alimuzaffar.lib:pinentryedittext:1.3.1'
+    implementation 'me.philio:pinentryview:1.0.6'
+    /*      fire base chat      */
+    implementation 'me.himanshusoni.chatmessageview:chat-message-view:1.0.3'
+    implementation 'com.github.jkwiecien:EasyImage:2.1.0'
+
+    implementation 'uk.co.chrisjenx:calligraphy:2.3.0'
+    implementation 'io.github.inflationx:calligraphy3:3.1.1'
+    implementation 'io.github.inflationx:viewpump:2.0.3'
+
+    implementation 'com.github.jkwiecien:EasyImage:2.1.0'
+    implementation 'id.zelory:compressor:2.1.0'
+
+    implementation 'com.facebook.stetho:stetho-okhttp3:1.5.0'
+    implementation 'com.squareup.okhttp3:okhttp:3.4.1'
+    implementation 'com.facebook.stetho:stetho-urlconnection:1.5.0'
+
+
+    testImplementation 'junit:junit:4.12'
+}
+apply plugin: 'com.google.gms.google-services'
