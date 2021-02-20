@@ -83,6 +83,35 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/sample_name" />
+
+
+            <com.delivery.provider.Utilities.MyBoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="Name"
+                android:textColor="@color/black_text_color" />
+
+            <com.delivery.provider.Utilities.MyTextView
+                android:id="@+id/receivername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sample_name" />
+
+            <com.delivery.provider.Utilities.MyBoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="Phone"
+                android:textColor="@color/black_text_color" />
+
+            <com.delivery.provider.Utilities.MyTextView
+                android:id="@+id/receiverphone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sample_name" />
+
+
         </LinearLayout>
 
         <com.delivery.provider.Utilities.MyButton

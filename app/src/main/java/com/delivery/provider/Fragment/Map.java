@@ -411,7 +411,7 @@ public class Map extends Fragment implements OnMapReadyCallback, LocationListene
                 crtLat = Double.parseDouble(crt_lat);
                 crtLng = Double.parseDouble(crt_lng);
                 LatLng loc = new LatLng(crtLat, crtLng);
-                CameraPosition cameraPosition = new CameraPosition.Builder().target(loc).zoom(16).build();
+                CameraPosition cameraPosition = new CameraPosition.Builder().target(loc).zoom(14).build();
                 mMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
             }
         });
@@ -745,7 +745,7 @@ public class Map extends Fragment implements OnMapReadyCallback, LocationListene
 
         if (!crt_lat.equalsIgnoreCase("") && !crt_lat.equalsIgnoreCase("")) {
             LatLng myLocation = new LatLng(Double.parseDouble(crt_lat), Double.parseDouble(crt_lng));
-            CameraPosition cameraPosition = new CameraPosition.Builder().target(myLocation).zoom(16).build();
+            CameraPosition cameraPosition = new CameraPosition.Builder().target(myLocation).zoom(14).build();
             mMap.moveCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
         }
 
@@ -894,7 +894,7 @@ public class Map extends Fragment implements OnMapReadyCallback, LocationListene
 //            sourceLatLng = currentLatLng;
             sourceLatLng = new LatLng(Double.parseDouble(SharedHelper.getKey(context, "current_lat")), Double.parseDouble(SharedHelper.getKey(context, "current_lng")));
             destLatLng = new LatLng(srcLatitude, srcLongitude);
-            CameraPosition cameraPosition = new CameraPosition.Builder().target(destLatLng).zoom(16).build();
+            CameraPosition cameraPosition = new CameraPosition.Builder().target(destLatLng).zoom(14).build();
             MarkerOptions options = new MarkerOptions();
             options.position(destLatLng).isDraggable();
             mMap.moveCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
@@ -1049,7 +1049,7 @@ public class Map extends Fragment implements OnMapReadyCallback, LocationListene
                 myLng = String.valueOf(location.getLongitude());
 
                 LatLng myLocation = new LatLng(location.getLatitude(), location.getLongitude());
-                CameraPosition cameraPosition = new CameraPosition.Builder().target(myLocation).zoom(16).build();
+                CameraPosition cameraPosition = new CameraPosition.Builder().target(myLocation).zoom(14).build();
                 MarkerOptions markerOptions = new MarkerOptions();
                 markerOptions.position(myLocation);
 //                    Marker marker = mMap.addMarker(markerOptions);
@@ -1102,7 +1102,7 @@ public class Map extends Fragment implements OnMapReadyCallback, LocationListene
                 if (imgCurrentLoc.getVisibility() == View.VISIBLE) {
                     imgCurrentLoc.setVisibility(View.GONE);
                 }
-                if (mMap.getCameraPosition().zoom < 16.0f) {
+                if (mMap.getCameraPosition().zoom < 14.0f) {
                     if (imgCurrentLoc.getVisibility() == View.GONE) {
                         imgCurrentLoc.setVisibility(View.VISIBLE);
                     }
@@ -1299,6 +1299,10 @@ public class Map extends Fragment implements OnMapReadyCallback, LocationListene
                                                 flows.setId(userdrop.getJSONObject(i).optString("id"));
                                                 flows.setUser_request_id(userdrop.getJSONObject(i).optString("user_request_id"));
                                                 flows.setAfterImage(userdrop.getJSONObject(i).optString("after_image"));
+
+                                                flows.setReceiver_name(userdrop.getJSONObject(i).optString("receiver_name"));
+                                                flows.setReceiver_number(userdrop.getJSONObject(i).optString("receiver_number"));
+
                                                 flowArrayList.add(flows);
 
                                             }
@@ -1941,7 +1945,7 @@ public class Map extends Fragment implements OnMapReadyCallback, LocationListene
                     lnrGoOffline.setVisibility(View.VISIBLE);
                     destinationLayer.setVisibility(View.GONE);
                     LatLng myLocation = new LatLng(Double.parseDouble(crt_lat), Double.parseDouble(crt_lng));
-                    CameraPosition cameraPosition = new CameraPosition.Builder().target(myLocation).zoom(16).build();
+                    CameraPosition cameraPosition = new CameraPosition.Builder().target(myLocation).zoom(14).build();
                     mMap.moveCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
                     mapClear();
                     if (mMap != null) {
@@ -2746,7 +2750,7 @@ public class Map extends Fragment implements OnMapReadyCallback, LocationListene
                 builder.include(sourceLatLng);
                 builder.include(destLatLng);
                 if (CurrentStatus.equalsIgnoreCase("STARTED")) {
-                    CameraPosition cameraPosition = new CameraPosition.Builder().target(sourceLatLng).zoom(16).build();
+                    CameraPosition cameraPosition = new CameraPosition.Builder().target(sourceLatLng).zoom(14).build();
                     MarkerOptions markerOptionsq = new MarkerOptions();
                     markerOptionsq.position(sourceLatLng);
                     mMap.moveCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));

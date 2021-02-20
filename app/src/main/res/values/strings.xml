@@ -265,5 +265,6 @@
     <string name="english">English</string>
     <string name="spanish">Spanish</string>
     <string name="mobile_exist">The mobile no already exists</string>
+    <string name="uploading">Uploading…</string>
 
 </resources>

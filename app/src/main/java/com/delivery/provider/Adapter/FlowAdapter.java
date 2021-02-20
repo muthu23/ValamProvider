@@ -59,6 +59,17 @@ public class FlowAdapter extends RecyclerView.Adapter<FlowAdapter.ViewHolder> {
         } else {
             holder.comments.setText("");
         }
+        if (flows.getReceiver_number() != null) {
+            holder.receiverphone.setText(flows.getReceiver_number());
+        } else {
+            holder.receiverphone.setText("");
+        }
+        if (flows.getReceiver_name() != null) {
+            holder.receivername.setText(flows.getReceiver_name());
+        } else {
+            holder.receivername.setText("");
+        }
+
         if (flows.getStatus() != null) {
             Log.e(TAG, "flows_status: " + flows.getStatus());
             if (flows.getStatus().equalsIgnoreCase("SEARCHING")) {
@@ -129,7 +140,7 @@ public class FlowAdapter extends RecyclerView.Adapter<FlowAdapter.ViewHolder> {
 
     public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
-        TextView delivery_address, comments;
+        TextView delivery_address, comments,receivername,receiverphone;
         MyBoldTextView order;
         ImageView navigation/*, imgGotoPhoto*/;
         Button status_btn;
@@ -139,6 +150,8 @@ public class FlowAdapter extends RecyclerView.Adapter<FlowAdapter.ViewHolder> {
             super(itemView);
             order = itemView.findViewById(R.id.order);
             delivery_address = itemView.findViewById(R.id.delivery_address);
+            receivername = itemView.findViewById(R.id.receivername);
+            receiverphone = itemView.findViewById(R.id.receiverphone);
             comments = itemView.findViewById(R.id.comments);
             navigation = itemView.findViewById(R.id.navigation);
             status_btn = itemView.findViewById(R.id.status_btn);
@@ -156,7 +169,7 @@ public class FlowAdapter extends RecyclerView.Adapter<FlowAdapter.ViewHolder> {
                 if (v == navigation) {
                     flowadapterListener.onnavigationClick(flows);
                 } else if (v == status_btn) {
-                    flowadapterListener.onstausClick(flows, position,listModels);
+                    flowadapterListener.onstausClick(flows, position, listModels);
                 }
             }
         }

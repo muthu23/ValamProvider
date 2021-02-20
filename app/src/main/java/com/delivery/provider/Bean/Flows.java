@@ -20,6 +20,9 @@ public class Flows extends Throwable implements Serializable {
     String user_request_id;
     String after_image;
 
+    String receiver_name;
+    String receiver_number;
+
     public String getorder() {
         return order;
     }
@@ -126,6 +129,22 @@ public class Flows extends Throwable implements Serializable {
                 ", destination_long='" + destination_long + '\'' +
                 ", after_image='" + after_image + '\'' +
                 '}';
+    }
+
+    public String getReceiver_name() {
+        return receiver_name;
+    }
+
+    public void setReceiver_name(String receiver_name) {
+        this.receiver_name = receiver_name;
+    }
+
+    public String getReceiver_number() {
+        return receiver_number;
+    }
+
+    public void setReceiver_number(String receiver_number) {
+        this.receiver_number = receiver_number;
     }
 }
 
