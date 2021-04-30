@@ -12,7 +12,7 @@ import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.Volley;
 import com.delivery.provider.Utilities.FontsOverride;
 import com.delivery.provider.Utilities.LocaleHelper;
-import com.facebook.stetho.Stetho;
+//import com.facebook.stetho.Stetho;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -59,8 +59,8 @@ public class MyApplication extends Application {
 //        FontsOverride.setDefaultFont(this, "SERIF", "ClanPro-Book.otf");
 //        FontsOverride.setDefaultFont(this, "SANS_SERIF", "ClanPro-Book.otf");
 
-        if (BuildConfig.DEBUG)
-            Stetho.initializeWithDefaults(this);
+       /* if (BuildConfig.DEBUG)
+            Stetho.initializeWithDefaults(this);*/
 
     }
 
@@ -78,8 +78,8 @@ public class MyApplication extends Application {
 
     public RequestQueue getRequestQueue() {
         if (mRequestQueue == null) {
-           // mRequestQueue = Volley.newRequestQueue(getApplicationContext());
-            mRequestQueue = Volley.newRequestQueue(this, new OkHttpStack());
+            mRequestQueue = Volley.newRequestQueue(getApplicationContext());
+            //mRequestQueue = Volley.newRequestQueue(this, new OkHttpStack());
         }
         return mRequestQueue;
     }
